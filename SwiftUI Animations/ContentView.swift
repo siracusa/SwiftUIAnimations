@@ -43,7 +43,7 @@ struct ContentView: View {
             VStack(alignment: .center, spacing: 0) {
                 Button("Move") {
                     withAnimation(.default) {
-                        atTop.toggle()
+                        atTop.toggle()                        
                     }
                 }
                 .frame(width: 84, height: 50)
