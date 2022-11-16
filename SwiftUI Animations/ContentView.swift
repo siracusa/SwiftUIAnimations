@@ -31,6 +31,7 @@ struct ContentView: View {
                         .font(.system(size: 12, design: .rounded))
                         .foregroundColor(.white)
                 }
+                .drawingGroup() // The fix, thanks to Ian Keen
                 .fixedSize()
                 .padding(.leading, -5)
                 .padding(.top, -5),
