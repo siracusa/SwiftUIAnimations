@@ -27,6 +27,9 @@ struct ContentView: View {
                         .fill(.blue)
                         .frame(minWidth: 25, minHeight: 25, alignment: .center)
                     Text(atTop ? "1" : "2")
+                        // Another possible fix, from Harry L at Apple
+                        //.transition(.identity)
+                        //.contentTransition(.identity)
                         .padding([ .leading, .trailing ], 5)
                         .font(.system(size: 12, design: .rounded))
                         .foregroundColor(.white)
